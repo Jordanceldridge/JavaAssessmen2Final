@@ -1,18 +1,47 @@
-import java.util.Scanner;
+package com.zipcodewilmington.assessment2.part1;
+
 
 public class WuTangConcatenator {
-    public Integer MultiplesOfThree(Integer input) {
-        WuTangConcatenator wtc = new WuTangConcatenator();
+    public WuTangConcatenator(Integer input) {
+        int i = input;
 
-        Scanner scan = new Scanner(System.in);
-        int x;
-        x = scan.nextInt();
-        if (x % 3==0){
-            System.out.println("Wu numbers");
 
+    }
+
+     int i;
+
+
+
+    public boolean isWu() {
+        if (i / 3 == 0) {
+            return true;
+        } else {
+            return false;
         }
-        return x;
+
+
+    }
+
+    public boolean isTang() {
+        if (i % 5 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+
+    }
+
+    public boolean isWuTang() {
+        if (i % 15 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+
 
     }
 }
+
+
 
